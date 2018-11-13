@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Modelo.Master.cs" Inherits="Projeto.Modelo2Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="materialize/css/materialize.min.css" rel="stylesheet" />
+<link href="materialize/css/styleMaterialize.css" rel="stylesheet"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<!--=========================================NAV-BAR================================================================================--> 
+    <nav>
+        <div class="nav-wrapper">
+            <img src="image/Heart-Icon-01-01.png" id="imageLogo"/>  
+            <a href="#!" class="brand-logo">Grey's Anatomy Clinic</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">            
+            <li><a href="Home.aspx">Home</a></li>
+            <li><a href="About.aspx">About</a></li>
+            <li><a href="Especialidades.aspx">Especialidades</a></li>
+            <li><a href="Cadastrar2.aspx">Cadastrar-se</a></li>
+            <li><a href="Sign.aspx">Sign in</a></li>
+          </ul>
+        </div>
+    </nav>      
+    
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+        
+    <!--=========================================================FOOTERRRRRR===============================================================-->
+    <footer class="page-footer">
+        <div class="footer-copyright">
+          <div class="container">
+            <span>Copyright © 2018 <a class="grey-text text-lighten-4" target="_blank">GeeksLabs</a> All rights reserved.</span>
+            <span class="right">Design and Developed by <a class="grey-text text-lighten-4" >GeeksLabs</a></span>
+            </div>
+        </div>
+      </footer>  
+ <!--=========================================================================================================-->
+</body> 
+ <script src="materialize/js/jquery-3.3.1.slim.min.js"></script>
+ <script src="materialize/js/materialize.min.js"></script>
+ <asp:ContentPlaceHolder ID="script" runat="server">
+ </asp:ContentPlaceHolder>  
+ 
+ 
+</html>
+ 
+ 

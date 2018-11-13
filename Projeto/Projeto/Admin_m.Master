@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin_m.master.cs" Inherits="Projeto.Admin_m" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link href="materialize/css/styleMaterialize.css" rel="stylesheet" /> 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
+
+<title></title>
+<asp:ContentPlaceHolder ID="head" runat="server">
+</asp:ContentPlaceHolder>
+</head>
+<body style="background-color: #f0faff;">
+    <form id="form1" runat="server" novalidate>
+        <!-- <nav> navbar content here </nav> --> 
+
+        <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li><div class="user-view">
+            <div class="background">
+            <img src="image/nuvem.png">
+            </div>
+            <a href="#user"><img class="circle" src="image/eu.jpg"></a>
+            <a href="#name"><span class="white-text name">Bianca Dorta</span></a>
+            <a href="#email"><span class="white-text email">bianquinha@gmail.com</span></a>
+        </div></li>
+		
+		<li><a href="Cad_paciente.aspx" class="waves-effect"><i class="material-icons">face</i>Cadastrar pacientes</a></li>
+		<li><a href="CadMedico.aspx" class="waves-effect"><i class="material-icons">person_pin</i>Cadastrar medicos</a></li>
+		<li><a href="Grid.aspx" class="waves-effect"><i class="material-icons">event_note</i>Cadastrar consultas</a></li>
+		<li><a href="CadEspecialidade.aspx" class="waves-effect"><i class="material-icons">local_hospital</i>Cadastrar especialidades</a></li>
+				  
+		
+        <li><a href="!#" class="waves-effect"><i class="material-icons">email</i>Enviar emails</a></li>
+        <li><div class="divider"></div></li>      
+        <li><a class="waves-effect" href="#!"><i class="material-icons">edit</i>Edit count</a></li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>    
+        
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>        
+    </form>
+
+ <asp:ContentPlaceHolder ID="script" runat="server">
+ </asp:ContentPlaceHolder>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, {});
+    });
+ 
+    //$(document).ready(function () {
+      //  $('.sidenav').sidenav();
+   //});
+</script> 
+</html>

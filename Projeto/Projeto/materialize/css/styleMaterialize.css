@@ -1,0 +1,50 @@
+﻿nav {
+    background: rgba(0, 150, 136, 0.77);
+}
+
+nav .brand-logo {
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 0;
+    cursor: default;
+}
+
+.erro_cadastro {
+	text-align: center;
+	color: orangered;
+    display: none;	
+}
+
+.page-footer { 
+    background-color: rgba(0, 150, 136, 0.77);    
+}
+
+.slider .slides li .caption {
+    color: #a6a6a6;
+}
+
+.grey-text.text-lighten-3 {
+    color: #607d8b !important;
+}
+
+.btn, .btn-large, .btn-small {
+    background: #e6ffe6;
+    color: #444;
+}
+
+.white-text {
+    color: #444 !important;
+}
+
+row primary-color form-header {
+    background: #e6ffe6;
+}
+
+#imageReg {
+    height: 65px;
+}
+#imageLogo {
+    height: 64px;
+}
